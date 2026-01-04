@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Xeno Translator",
+  "version": "0.1",
+  "description": "Translate video subtitles by selecting an area",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["html2canvas.min.js", "tesseract.min.js", "content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
